@@ -8,7 +8,7 @@ app = Flask(__name__)
 def hello_world():
     """Returns Hello, EDP!"""
     hostname = os.getenv("HOSTNAME")
-    return hostname
+    return "Response received from pod: " + hostname
 
 
 if __name__ == '__main__':
